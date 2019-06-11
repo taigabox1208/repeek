@@ -1,8 +1,16 @@
 <?php
 
 return array(
-
+    
+    // USER FACTORY 定数
     'AMOUNT_USER_FAKER' => 10,
+    // INVESTIGATOR FACTORY 定数
+    'AMOUNT_INVESTIGATOR_FAKER' => 50,
+    'WEAPON_MAX_LEVEL' => 3,
+    'WEAPON_MIN_LEVEL' => 1,
+    'AMOUNT_PRIZE_FAKER' => 50,
+    'AMOUNT_STORY_FAKER' => 20,
+    'AMOUNT_ENDING_FAKER' => 20,
 
 );
 
