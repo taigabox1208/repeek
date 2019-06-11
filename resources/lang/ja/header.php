@@ -10,6 +10,11 @@ return [
     |
     */
 
-    
+    'users' => 'ユーザー',
+    'investigators' => '探索者',
+    'prizes' => 'プライズ',
+    'stories' => 'ストーリー',
+    'endings' => 'エンディング',
+    'sessions' => 'セッション'
 
 ];

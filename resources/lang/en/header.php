@@ -10,6 +10,11 @@ return [
     |
     */
 
-    
+    'users' => 'users',
+    'investigators' => 'investigators',
+    'prizes' => 'prizes',
+    'stories' => 'stories',
+    'endings' => 'endings',
+    'sessions' => 'sessions' 
 
 ];
