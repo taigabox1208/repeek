@@ -15,6 +15,11 @@
                     @endif
 
                     You are logged in!
+                    @php
+                    $test = App\Models\WeaponType::all()->count();
+                    @endphp
+                    {{ $test }}
+
                 </div>
             </div>
         </div>

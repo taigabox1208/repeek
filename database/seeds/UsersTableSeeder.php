@@ -27,6 +27,6 @@ class UsersTableSeeder extends Seeder
             ]);
         }
 
-        factory(\App\Models\User::class, config('AMOUNT_USER_FAKER'))->create(); // テスト用のモックユーザーの作成
+        factory(\App\Models\User::class, config('const.AMOUNT_USER_FAKER'))->create(); // テスト用のモックユーザーの作成
     }
 }
