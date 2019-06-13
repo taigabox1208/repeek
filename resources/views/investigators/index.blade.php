@@ -31,10 +31,14 @@
                             <td>{{ $investigator->id }}</td>
                             <td>{{ $investigator->name }}</td>
                             <td>{{ $investigator->main_weapon_key }}</td> 
-                            <td>{{ $investigator->main_weapon_type_id }}</td> 
+                            <td>
+                                {{ $investigator->getWeaponIconPath($investigator->main_weapon_type_id) }}
+                            </td> 
                             <td>{{ $investigator->main_weapon_value }}</td>
                             <td>{{ $investigator->sub_weapon_key }}</td> 
-                            <td>{{ $investigator->sub_weapon_type_id }}</td> 
+                            <td>
+                                {{ $investigator->getWeaponIconPath($investigator->sub_weapon_type_id) }}
+                            </td> 
                             <td>{{ $investigator->sub_weapon_value }}</td>
                             <td>{{ $investigator->notes }}</td> 
                         </tr>

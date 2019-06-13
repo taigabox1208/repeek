@@ -32,4 +32,17 @@ class Investigator extends Model
     protected $casts = [
         //
     ];
+
+    /**
+     * 探索者のメイン技能・サブ技能のIDを受け取って、技能タイプ画像をHTMLタグ付きで出力する
+     *
+     * @var int
+     * @return void
+     */
+    private function getWeaponIconPath(int $weapon_type_id)
+    {
+        $model = WeaponType::where('id', $weapon_type_id)->first();
+        echo '<i class="pr-1 fas ' . $model->icon . '"></i>' . $model->name;
+
+    }
 }

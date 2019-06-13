@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Investigator;
+use App\Models\WeaponType;
 
 class InvestigatorController extends Controller
 {
@@ -15,7 +16,8 @@ class InvestigatorController extends Controller
     public function index()
     {
         $investigators = Investigator::simplePaginate(10);
-        return view('investigators.index', ['investigators' => $investigators]);
+        $weapon_types = WeaponType::all();
+        return view('investigators.index', ['investigators' => $investigators, 'weapon_types' => $weapon_types]);
     }
 
     /**

@@ -32,6 +32,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
+                    @auth
                     <ul class="navbar-nav mr-auto">
                         <div class="btn-group p-1" role="group" aria-label="Button group with nested dropdown">
                               <div class="btn-group" role="group">
@@ -94,6 +95,7 @@
                               </div>
                             </div>
                     </ul>
+                    @endauth
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
